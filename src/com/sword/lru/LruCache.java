@@ -17,10 +17,8 @@ public class LruCache<K, V> extends LinkedHashMap<K, V> {
 		return size() > CACHE_SIZE;
 	}
 	
-	
-	
 	public static void main(String[] args) {
-		LruCache<Integer ,Integer> l = new LruCache(5);
+		LruCache<Integer ,Integer> l = new LruCache<Integer, Integer>(5);
 		l.put(1,2 );
 		l.put(3,4 );
 		l.put(5,6 );
